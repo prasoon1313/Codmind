@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codemind"
+version = "1.0.0"
+description = "CodeMind: offline static Codebase Intelligence Engine for Python projects"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["networkx>=3.0"]
+keywords = ["static-analysis", "ast", "code-quality", "dependency-graph", "complexity"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+codemind = "codemind.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["codemind*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
