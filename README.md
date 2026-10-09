@@ -1,3 +1,4 @@
+Hello I'm Prasoon! This is my python project!!
 # CodeMind: Codebase Intelligence Engine
 
 Offline, Python-only static analysis for Python projects. CodeMind parses source with the built-in
@@ -5,7 +6,7 @@ Offline, Python-only static analysis for Python projects. CodeMind parses source
 scores quality transparently, stores every scan in SQLite and compares scans over time.
 It never executes the analysed code, needs no network, and uses no AI services.
 
-## Install
+## Install 
 
 ```bash
 python -m venv .venv && source .venv/bin/activate     # Python 3.11+
